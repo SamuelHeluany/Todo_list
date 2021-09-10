@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: 50vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.container .todoList {
+  width: 500px;
+  height:300px;
+}
+
+.container .todoList input {
+  width: 364px;
+  height: 42px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color:rgb(51, 51, 51);
   color: white;
+  border: none;
+  margin-left: 20px;
+  outline: none;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.container .todoList .buttonAdd {
+  background-color: transparent;
+  border: none;
+  size: 40px;
+  color: rgb(6, 187, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .todoList .buttonAdd i {
+  padding: 5px;
+}
+
+.container .todoList ul {
+  margin: 20px;
+  list-style: none;
+}
+
+.container .todoList li {
+  width: 400px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 6px;
+  margin-bottom: 10px;
+  background-color: rgb(0, 34, 78);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonDel {
+  display: flex;
+  float: right;
+}
+
+.buttonDelete {
+  background-color:transparent;
+  border: none;
+  color: red;
+}
+
+.buttonAdd:hover {
+  cursor: pointer;
+}
+
+.buttonDelete:hover {
+  cursor: pointer;
 }
